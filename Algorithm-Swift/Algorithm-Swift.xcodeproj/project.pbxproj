@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0770DF4D26608D6F000E35A0 /* Fib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770DF4C26608D6F000E35A0 /* Fib.swift */; };
+		0770DF4F2660D3F3000E35A0 /* Hanoi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770DF4E2660D3F3000E35A0 /* Hanoi.swift */; };
+		0770DF512660F08A000E35A0 /* Factorial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0770DF502660F089000E35A0 /* Factorial.swift */; };
 		078B3F0E265E2731005E42AB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B3F0D265E2731005E42AB /* main.swift */; };
 		078B3F51265E5B07005E42AB /* ArrayList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 078B3F50265E5B07005E42AB /* ArrayList.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0770DF4C26608D6F000E35A0 /* Fib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fib.swift; sourceTree = "<group>"; };
+		0770DF4E2660D3F3000E35A0 /* Hanoi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hanoi.swift; sourceTree = "<group>"; };
+		0770DF502660F089000E35A0 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		078B3F0A265E2731005E42AB /* Algorithm-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Algorithm-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		078B3F0D265E2731005E42AB /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		078B3F50265E5B07005E42AB /* ArrayList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayList.swift; sourceTree = "<group>"; };
@@ -60,6 +66,9 @@
 			isa = PBXGroup;
 			children = (
 				078B3F0D265E2731005E42AB /* main.swift */,
+				0770DF502660F089000E35A0 /* Factorial.swift */,
+				0770DF4C26608D6F000E35A0 /* Fib.swift */,
+				0770DF4E2660D3F3000E35A0 /* Hanoi.swift */,
 				078B3F50265E5B07005E42AB /* ArrayList.swift */,
 			);
 			path = "Algorithm-Swift";
@@ -123,6 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				078B3F0E265E2731005E42AB /* main.swift in Sources */,
+				0770DF4F2660D3F3000E35A0 /* Hanoi.swift in Sources */,
+				0770DF4D26608D6F000E35A0 /* Fib.swift in Sources */,
+				0770DF512660F08A000E35A0 /* Factorial.swift in Sources */,
 				078B3F51265E5B07005E42AB /* ArrayList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

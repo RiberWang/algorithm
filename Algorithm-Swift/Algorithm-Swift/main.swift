@@ -12,15 +12,31 @@ print("Hello, World!")
 let n: Int = 45
 
 
+//countTime() {
+//    print(fib1(n))
+//}
+
+//countTime() {
+//    print(fib2(n))
+//}
+//
+let fib: Fib = Fib.init()
 countTime() {
-    print(fib1(n))
+    print(fib.fibTail(n))
 }
+//countTime() {
+//    print(fib.fib2(n))
+//}
+//
+//countTime() {
+//    print(fib.fib5(n))
+//}
 
-countTime() {
-    print(fib2(n))
-}
+//let hanoi: Hanoi = Hanoi.init()
+//hanoi.hanoi(7, "A", "B", "C")
 
-
+let factorial: Factorial = Factorial.init()
+print(factorial.factorial1(4))
 
 func fib1(_ n: Int) -> Int {
     if n <= 1 {
