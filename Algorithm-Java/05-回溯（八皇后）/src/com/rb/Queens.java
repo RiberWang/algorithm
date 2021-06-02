@@ -1,8 +1,8 @@
 package com.rb;
 
-public class Main {
+public class Queens {
     public static void main(String[] args) {
-        new Main().placeEightQueens(4);
+        new Queens().placeEightQueens(4);
     }
     /*
     * 数组索引是行号，数组元素是列号 cols[row] = col
@@ -12,7 +12,7 @@ public class Main {
     // 一共有多少种摆法
     int ways;
     void placeEightQueens(int n) {
-        if (n < 0) return;
+        if (n < 1) return;
         cols = new int[n];
         place(0);
 
