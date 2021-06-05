@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-回溯（八皇后）/src/com/rb/Queens2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-回溯（八皇后）/src/com/rb/Queens3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-贪心/06-贪心.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-贪心/src/com/rb/CoinChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-贪心/src/com/rb/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-贪心/src/com/rb/Pirate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-贪心/src/knapsack/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-贪心/src/knapsack/Knapsack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-分治/07-分治.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-分治/src/com/rb/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-动态规划/08-动态规划.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/08-动态规划/src/com/rb/CoinChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-布隆过滤器/09-布隆过滤器.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-布隆过滤器/src/com/rb/BloomFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/09-布隆过滤器/src/com/rb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm-C/Algorithm-C.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm-C/Algorithm-C.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05-回溯（八皇后）/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/05-回溯（八皇后）/src/com/rb/Queens.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/05-回溯（八皇后）/com/rb/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-贪心/src/com/rb/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/06-贪心/src/com/rb/CoinChange.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/06-贪心/com/rb/CoinChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/06-贪心/com/rb/CoinChange.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Algorithm/Algorithm.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/Algorithm.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,20 @@
       <recent name="com.rb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.CoinChange (1)">
+    <configuration name="CoinChange (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rb.CoinChange" />
+      <module name="08-动态规划" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoinChange" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.CoinChange" />
       <module name="06-贪心" />
@@ -99,22 +106,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
-      <module name="06-贪心" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.rb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Queens3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.rb.Queens3" />
-      <module name="05-回溯（八皇后）" />
+      <module name="09-布隆过滤器" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rb.*" />
@@ -127,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CoinChange (1)" />
+        <item itemvalue="Application.CoinChange" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Knapsack" />
-        <item itemvalue="Application.CoinChange" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Queens3" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +150,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

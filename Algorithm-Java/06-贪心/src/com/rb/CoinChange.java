@@ -6,11 +6,31 @@ public class CoinChange {
     public static void main(String[] args) {
         coinChange(new Integer[] {25, 10, 5, 1}, 41);
 
-        // ◼ 贪心策略并不一定能得到全局最优解
+        // ◼ 贪心策略并不一定能得到全局最优解 其实是3种 详细看09-动态规划
         coinChange(new Integer[] {25, 20, 5, 1}, 41);
     }
 
     static  void coinChange(Integer[] faces, int money) {
+        // ◼假设有 25 分、20 分、5 分、1 分的硬币，现要找给客户 41 分的零钱，如何办到硬币个数最少?
+        if (faces.length <= 0) return;
+        // 零钱兑换
+        Arrays.sort(faces);
+        int coins = 0, index = faces.length - 1;
+
+        while (index >= 0) {
+            while (money >= faces[index]) {
+                System.out.println("选择的硬币是：" + faces[index]);
+
+                money -= faces[index];
+                coins++;
+            }
+            index--;
+        }
+
+        System.out.println("一共找了" + coins + "枚硬币");
+    }
+
+    static  void coinChange2(Integer[] faces, int money) {
         // ◼假设有 25 分、20 分、5 分、1 分的硬币，现要找给客户 41 分的零钱，如何办到硬币个数最少?
         if (faces.length <= 0) return;
         // 零钱兑换
