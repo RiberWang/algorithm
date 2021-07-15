@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/07-分治/07-分治.iml" filepath="$PROJECT_DIR$/07-分治/07-分治.iml" />
       <module fileurl="file://$PROJECT_DIR$/08-动态规划/08-动态规划.iml" filepath="$PROJECT_DIR$/08-动态规划/08-动态规划.iml" />
       <module fileurl="file://$PROJECT_DIR$/09-布隆过滤器/09-布隆过滤器.iml" filepath="$PROJECT_DIR$/09-布隆过滤器/09-布隆过滤器.iml" />
+      <module fileurl="file://$PROJECT_DIR$/算法第一季/算法第一季.iml" filepath="$PROJECT_DIR$/算法第一季/算法第一季.iml" />
     </modules>
   </component>
 </project>

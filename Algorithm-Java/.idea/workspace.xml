@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/08-动态规划/08-动态规划.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-动态规划/src/com/rb/CoinChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-布隆过滤器/09-布隆过滤器.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-布隆过滤器/src/com/rb/BloomFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-布隆过滤器/src/com/rb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm-C/Algorithm-C.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm-C/Algorithm-C.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季/算法第一季.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06-贪心/src/com/rb/CoinChange.java" beforeDir="false" afterPath="$PROJECT_DIR$/06-贪心/src/com/rb/CoinChange.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/06-贪心/com/rb/CoinChange.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/06-贪心/com/rb/CoinChange.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Algorithm/Algorithm.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" beforeDir="false" afterPath="$PROJECT_DIR$/../Algorithm/Algorithm.xcodeproj/project.xcworkspace/xcuserdata/riber.xcuserdatad/UserInterfaceState.xcuserstate" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +43,14 @@
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/算法第一季/02-动态数组" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.rb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CoinChange (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CoinChange (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.CoinChange" />
       <module name="08-动态规划" />
@@ -73,19 +70,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rb.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Knapsack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="knapsack.Knapsack" />
-      <module name="06-贪心" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="knapsack.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,13 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
+      <module name="算法第一季" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rb.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CoinChange (1)" />
         <item itemvalue="Application.CoinChange" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Knapsack" />
       </list>
     </recent_temporary>
   </component>
