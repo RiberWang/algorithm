@@ -30,8 +30,11 @@ public class Person {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        Person person = (Person) o;
-        return age == person.age && Objects.equals(name, person.name);
+        if (o instanceof Person) {
+            Person person = (Person) o;
+            return age == person.age && Objects.equals(name, person.name);
+        }
+        return false;
     }
 
     @Override
