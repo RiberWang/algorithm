@@ -1,6 +1,6 @@
 package com.rb;
 
-public class ArrayList {
+public class ArrayList<E> {
     /*
     * 元素的数量
     * */
@@ -9,14 +9,14 @@ public class ArrayList {
     /*
     * 所有的元素
     * */
-    private int[] elements;
+    private E[] elements;
 
-    private static final int DEFAULT_CAPACITY = 5;
+    private static final int DEFAULT_CAPACITY = 10;
     private static final int ELEMENT_NOT_FOUND = -1;
 
     public ArrayList(int capaticy) {
         capaticy = (capaticy < 0) ? DEFAULT_CAPACITY : capaticy;
-        elements = new int[capaticy];
+        elements = (E[]) new Object[capaticy];
     }
 
     public ArrayList() {
@@ -30,6 +30,9 @@ public class ArrayList {
 //        if (size < 100) {
 //
 //        }
+        for (int i = 0; i < size; i++) {
+            elements[i] = null;
+        }
         size = 0;
     }
 
@@ -50,14 +53,14 @@ public class ArrayList {
     /*
     * 是否包含某个元素
     * */
-    public boolean contains(int element) {
+    public boolean contains(E element) {
         return indexOf(element) != ELEMENT_NOT_FOUND;
     }
 
     /*
     * 添加元素到尾部
     * */
-    public void add(int element) {
+    public void add(E element) {
         add(size, element);
 //        elements[size++] = element;
     }
@@ -65,7 +68,7 @@ public class ArrayList {
     /*
     * 获取index位置的元素
     * */
-    public int get(int index) {
+    public E get(int index) {
         rangeCheck(index);
 
         return elements[index];
@@ -74,10 +77,10 @@ public class ArrayList {
     /*
     * 设置index位置的元素
     * */
-    public int set(int index, int element) {
+    public E set(int index, E element) {
         rangeCheck(index);
 
-        int old = elements[index];
+        E old = elements[index];
         elements[index] = element;
         return old;
     }
@@ -85,14 +88,14 @@ public class ArrayList {
     /*
     * 删除index位置的元素
     * */
-    public int remove(int index) {
+    public E remove(int index) {
         rangeCheck(index);
 
-        int old = elements[index];
+        E old = elements[index];
         for (int i = index + 1; i <= size - 1 ; i++) {
             elements[i - 1] = elements[i];
         }
-        size--;
+        elements[--size] = null;
 
         return old;
     }
@@ -100,7 +103,9 @@ public class ArrayList {
     /*
     * index位置插入一个元素
     * */
-    public void add(int index, int element) {
+    public void add(int index, E element) {
+//        if (element == null) return;
+
         rangeCheckForAdd(index);
 
         ensureCapacity(size + 1);
@@ -121,7 +126,7 @@ public class ArrayList {
 
         // 新容量为旧容量的1.5倍
         int newCapacity = oldCapacity + (oldCapacity >> 1); // + 1 一般乘上一个系数
-        int[] newElements = new int[newCapacity];
+        E[] newElements = (E[]) new Object[newCapacity];
         for (int i = 0; i < size; i++) {
             newElements[i] = elements[i];
         }
@@ -133,10 +138,18 @@ public class ArrayList {
     /*
     * 查看元素的索引
     * */
-    public int indexOf(int element) {
-        for (int i = 0; i < size; i++) {
-            if (elements[i] == element) return i;
+    public int indexOf(E element) {
+        if (element == null) {
+            for (int i = 0; i < size; i++) {
+                if (elements[i] == null) return i;
+            }
         }
+        else {
+            for (int i = 0; i < size; i++) {
+                if (element.equals(elements[i])) return i;
+            }
+        }
+
         return ELEMENT_NOT_FOUND;
     }
 
