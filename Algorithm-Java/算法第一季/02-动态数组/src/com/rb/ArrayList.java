@@ -92,12 +92,19 @@ public class ArrayList<E> {
         rangeCheck(index);
 
         E old = elements[index];
-        for (int i = index + 1; i <= size - 1 ; i++) {
+        for (int i = index + 1; i < size; i++) {
             elements[i - 1] = elements[i];
         }
         elements[--size] = null;
 
         return old;
+    }
+
+    /*
+     * 删除元素
+     * */
+    public void remove(E element) {
+        remove(indexOf(element));
     }
 
     /*
@@ -110,8 +117,9 @@ public class ArrayList<E> {
 
         ensureCapacity(size + 1);
 
-        for (int i = size - 1; i >= index; i--) {
-            elements[i + 1] = elements[i];
+        // 减1操作优化
+        for (int i = size; i > index; i--) {
+            elements[i] = elements[i - 1];
         }
         elements[index] = element;
         size++;

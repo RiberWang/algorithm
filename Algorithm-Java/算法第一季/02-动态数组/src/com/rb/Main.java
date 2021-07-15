@@ -2,16 +2,24 @@ package com.rb;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Person> list = new ArrayList<>();
-        list.add(new Person(1, "PegPig"));
-        list.add(new Person(3, "Flower"));
-        list.add(new Person(29, "Riber"));
-        list.add(null);
-        System.out.println(list.indexOf(null));
-        list.clear();
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(0);
+        list.add(10);
+        list.add(22);
 
-        // 提醒JVM进行垃圾回收
-        System.gc();
+        Assert.test(list.size() == 3);
+        Assert.test(list.get(0) == 10);
+
+//        ArrayList<Person> list = new ArrayList<>();
+//        list.add(new Person(1, "PegPig"));
+//        list.add(new Person(3, "Flower"));
+//        list.add(new Person(29, "Riber"));
+//        list.add(null);
+//        System.out.println(list.indexOf(null));
+//        list.clear();
+//
+//        // 提醒JVM进行垃圾回收
+//        System.gc();
     }
 
     static void test() {

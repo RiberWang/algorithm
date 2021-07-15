@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Assert.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/算法第一季/com/rb/ArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季/com/rb/ArrayList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/算法第一季/com/rb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季/com/rb/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/ArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Main.java" afterDir="false" />
