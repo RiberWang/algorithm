@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/00-LeetCode.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/ListNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_206_反转链表.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_237_删除链表中的节点.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季02-动态数组/src/rb/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季02-动态数组/src/rb/Assert.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季02-动态数组/src/rb/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季02-动态数组/src/rb/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季02-动态数组/算法第一季02-动态数组.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/AbstractList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/ArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/LinkList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/List.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/算法第一季03-链表.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季/02-动态数组/src/com/rb/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,13 +49,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/算法第一季02-动态数组/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/算法第一季02-动态数组/src" />
+      <recent name="$PROJECT_DIR$/算法第一季/03-链表" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/算法第一季/02-动态数组" />
     </key>
@@ -102,7 +122,7 @@
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
-      <module name="算法第一季" />
+      <module name="算法第一季03-链表" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.rb.*" />
@@ -153,6 +173,26 @@
           <url>file://$PROJECT_DIR$/05-回溯（八皇后）/src/com/rb/Queens3.java</url>
           <line>16</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/算法第一季03-链表/src/com/rb/LinkList.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/算法第一季03-链表/src/com/rb/AbstractList.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/算法第一季03-链表/src/com/rb/LinkList.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/算法第一季03-链表/src/com/rb/AbstractList.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
