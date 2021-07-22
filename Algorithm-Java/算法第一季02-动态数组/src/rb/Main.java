@@ -7,6 +7,7 @@ public class Main {
         list.add(10);
         list.add(22);
 
+
         Assert.test(list.size() == 3);
         Assert.test(list.get(0) == 10);
 

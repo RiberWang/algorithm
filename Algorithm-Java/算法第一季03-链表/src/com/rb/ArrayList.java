@@ -61,6 +61,13 @@ public class ArrayList<E> extends AbstractList<E> {
     * 添加元素到尾部
     * */
     public void add(E element) {
+        /**
+         * 最好 O(1)
+         * 最坏 O(n)
+         * 平均 O(1) (1 + 1 + 1 + ... + n)
+         * 均摊 O(1) 相当于每次add的操作是2
+         * 均摊复杂度使用情况：经过连续的多次复杂度比较低的情况后，出现个别复杂度比较高的情况
+         */
         add(size, element);
 //        elements[size++] = element;
     }
@@ -68,16 +75,17 @@ public class ArrayList<E> extends AbstractList<E> {
     /*
     * 获取index位置的元素
     * */
-    public E get(int index) {
+    public E get(int index) { // O(1)
         rangeCheck(index);
 
+        // index * 4 + 数组的首地址 根据地址定位元素位置
         return elements[index];
     }
 
     /*
     * 设置index位置的元素
     * */
-    public E set(int index, E element) {
+    public E set(int index, E element) { // O(1)
         rangeCheck(index);
 
         E old = elements[index];
@@ -91,6 +99,11 @@ public class ArrayList<E> extends AbstractList<E> {
     public E remove(int index) {
         rangeCheck(index);
 
+        /**
+         * 最好 O(1)
+         * 最坏 O(n)
+         * 平均 O(n)
+         */
         E old = elements[index];
         for (int i = index + 1; i < size; i++) {
             elements[i - 1] = elements[i];
@@ -110,9 +123,13 @@ public class ArrayList<E> extends AbstractList<E> {
     /*
     * index位置插入一个元素
     * */
-    public void add(int index, E element) {
+    public void add(int index, E element) { // O(n) n是数据规模
 //        if (element == null) return;
-
+        /**
+         * 最好 O(1)
+         * 最坏 O(n)
+         * 平均 O(n) (0 + 1 + 2 + ... + n) / n = n*(n + 1) / (2*n) = (n + 1) / 2
+         */
         rangeCheckForAdd(index);
 
         ensureCapacity(size + 1);
