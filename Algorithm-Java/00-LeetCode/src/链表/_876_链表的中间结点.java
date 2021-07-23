@@ -20,7 +20,8 @@ public class _876_链表的中间结点 {
 
     /**
      * 单指针
-     * @param args
+     * @param head
+     * @return
      */
     static public ListNode middleNode2(ListNode head) {
         ListNode temp = head;
@@ -42,7 +43,8 @@ public class _876_链表的中间结点 {
 
     /**
      * 快慢指针
-     * @param args
+     * @param head
+     * @return
      */
     static public ListNode middleNode3(ListNode head) {
         ListNode slow = head;
@@ -54,7 +56,6 @@ public class _876_链表的中间结点 {
 
         return slow;
     }
-
 
     public static void main(String[] args) {
         ListNode node = new ListNode(1);

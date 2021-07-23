@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_141_环形链表.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_203_移除链表元素.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_83_删除排序链表中的重复元素.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_876_链表的中间结点.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/LinkList2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/ArrayList2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/算法第一季03-链表/com/rb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季03-链表/com/rb/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季02-动态数组/src/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季02-动态数组/src/rb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/LinkList.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/LinkList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00-LeetCode/src/链表/_876_链表的中间结点.java" beforeDir="false" afterPath="$PROJECT_DIR$/00-LeetCode/src/链表/_876_链表的中间结点.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季03-链表/src/com/rb/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +54,12 @@
       <recent name="com.rb" />
     </key>
   </component>
-  <component name="RunManager" selected="Application._876_链表的中间结点">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="Main" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.Main">
     <configuration name="CoinChange (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.CoinChange" />
       <module name="08-动态规划" />
@@ -129,8 +127,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application._876_链表的中间结点" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application._876_链表的中间结点" />
         <item itemvalue="Application.CoinChange (1)" />
         <item itemvalue="Application.CoinChange" />
         <item itemvalue="Application.Main (2)" />

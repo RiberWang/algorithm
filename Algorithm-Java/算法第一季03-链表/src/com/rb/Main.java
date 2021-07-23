@@ -7,17 +7,26 @@ public class Main {
 //
 //        }
 
-        List<Integer> list = new LinkList2<>();
-        list.add(20);
-        list.add(0, 10);
-        list.add(30);
-        list.add(list.size(), 40);
+//        List<Integer> list = new LinkList2<>();
+//        list.add(20);
+//        list.add(0, 10);
+//        list.add(30);
+//        list.add(list.size(), 40);
+//
+//        list.remove(0);
+//
+//        System.out.println(list.indexOf(30));
+//        System.out.println(list.get(1));
+//
+//        System.out.println(list);
 
-        list.remove(0);
+        List<Integer> list2 = new ArrayList2<>();
+        for (int i = 0; i < 50; i++) {
+            list2.add(i);
+        }
 
-        System.out.println(list.indexOf(30));
-        System.out.println(list.get(1));
-
-        System.out.println(list);
+        for (int i = 0; i < 50; i++) {
+            list2.remove(0);
+        }
     }
 }
