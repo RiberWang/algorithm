@@ -1,13 +1,15 @@
-package com.rb;
+package single;
+
+import com.rb.AbstractList;
 
 /**
  * 增加一个虚拟头结点
  * @param <E>
  */
-public class LinkList2<E> extends AbstractList<E> {
+public class SingleLinkList2<E> extends AbstractList<E> {
     private Node<E> first;
 
-    public LinkList2() {
+    public SingleLinkList2() {
         first = new Node<>(null, null);
     }
 

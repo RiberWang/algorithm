@@ -1,18 +1,18 @@
-package com.rb;
+package single;
+
+import com.rb.AbstractList;
 
 /**
- * 双向链表
+ * 单向链表
  * @param <E>
  */
-public class LinkList<E> extends AbstractList<E> {
+public class SingleLinkList<E> extends AbstractList<E> {
     private Node<E> first;
-    private Node<E> last;
 
     @Override
     public void clear() {
         size = 0;
         first = null;
-        last = null;
     }
 
     @Override
@@ -42,24 +42,20 @@ public class LinkList<E> extends AbstractList<E> {
     public E remove(int index) {
         rangeCheck(index);
 
-        Node<E> node = node(index);
-        Node<E> prev = node.prev;
-        Node<E> next = node.next;
-
-        if (prev == null) { // index == 0
-            first = next;
+        /**
+         * 最好 O(1)
+         * 最坏 O(n)
+         * 平均 O(n)
+         */
+        Node<E> node = first;
+        if (index == 0) {
+            first = first.next;
         }
         else {
-            prev.next = next;
+            Node<E> prev = node(index - 1);
+            node = prev.next;
+            prev.next = node.next;
         }
-
-        if (next == null) { // index == size - 1
-            last = prev;
-        }
-        else {
-            next.prev = prev;
-        }
-
         size--;
 
         return node.element;
@@ -69,31 +65,18 @@ public class LinkList<E> extends AbstractList<E> {
     public void add(int index, E element) {
         rangeCheckForAdd(index);
 
-        // size == 0
-        // index == 0
-        if (index == size) { // 往最后面添加元素
-            Node<E> oldLast = last;
-            last = new Node<>(oldLast, element, null);
-            if (oldLast == null) { // 链表的第一个元素
-                first = last;
-            }
-            else {
-                oldLast.next = last; // 也可以通过prev获取 last.prev.next = last;
-            }
+        /**
+         * 最好 O(1)
+         * 最坏 O(n)
+         * 平均 O(n)
+         */
+        if (index == 0) {
+            first = new Node<>(element, first);
         }
         else {
-            Node<E> next = node(index);
-            Node<E> prev = next.prev;
-            Node<E> node = new Node<>(prev, element, next);
-            next.prev = node;
-            if (prev == null) { // index == 0
-                first = node;
-            }
-            else {
-                prev.next = node;
-            }
+            Node<E> prev = node(index - 1);
+            prev.next = new Node<>(element, prev.next);
         }
-
         size++;
     }
 
@@ -124,18 +107,9 @@ public class LinkList<E> extends AbstractList<E> {
     private Node<E> node(int index) {
         rangeCheck(index);
 
-        // 左边
         Node<E> node = first;
-        if (index < (size >> 1)) {
-            for (int i = 0; i < index; i++) {
-                node = node.next;
-            }
-        }
-        else {
-            node = last;
-            for (int i = size - 1; i > index; i--) {
-                node = node.prev;
-            }
+        for (int i = 0; i < index; i++) {
+            node = node.next;
         }
 
         return node;
@@ -143,33 +117,11 @@ public class LinkList<E> extends AbstractList<E> {
 
     private static class Node<E> {
         E element;
-        Node<E> prev;
         Node<E> next;
 
-        public Node(Node<E> prev, E element, Node<E> next) {
-            this.prev = prev;
+        public Node(E element, Node<E> next) {
             this.element = element;
             this.next = next;
-        }
-
-        @Override
-        public String toString() {
-            StringBuilder sb = new StringBuilder();
-            if (prev != null) {
-                sb.append(prev.element);
-            }
-            else {
-                sb.append("null");
-            }
-            sb.append("_").append(element).append("_");
-            if (next != null) {
-                sb.append(next.element);
-            }
-            else {
-                sb.append("null");
-            }
-
-            return sb.toString();
         }
     }
 
@@ -190,7 +142,7 @@ public class LinkList<E> extends AbstractList<E> {
             if (node != first) {
                 string.append(", ");
             }
-            string.append(node);
+            string.append(node.element);
 
             node = node.next;
         }
