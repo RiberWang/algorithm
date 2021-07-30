@@ -1,5 +1,8 @@
 package com.rb;
 
+import circle.CircleLinkedList;
+import circle.SingleCircleLinkedList;
+
 public class Main {
     public static void main(String[] args) {
 //        ArrayList<Integer> list1 = new ArrayList<>();
@@ -29,8 +32,47 @@ public class Main {
 //            list2.remove(0);
 //        }
 
-        testList(new ArrayList<>());
-        testList(new LinkList<>());
+//        testList(new ArrayList<>());
+//        testList(new LinkList<>());
+//        testList(new SingleCircleLinkedList<>());
+        testList(new CircleLinkedList<>());
+
+        System.out.println("双向循环链表：");
+        josephus();
+        System.out.println("\n单向循环链表：");
+        josephusSingleCircleLinkedList();
+    }
+
+    static void josephusSingleCircleLinkedList() {
+        SingleCircleLinkedList<Integer> list = new SingleCircleLinkedList<>();
+        for (int i = 1; i <= 8; i++) {
+            list.add(i);
+        }
+
+        // 指向头结点 指向1
+        list.reset();
+
+        while (!list.isEmpty()) {
+            list.next();
+            list.next();
+            System.out.print(list.remove() + ", ");
+        }
+    }
+
+    static void josephus() {
+        CircleLinkedList<Integer> list = new CircleLinkedList<>();
+        for (int i = 1; i <= 8; i++) {
+            list.add(i);
+        }
+
+        // 指向头结点 指向1
+        list.reset();
+
+        while (!list.isEmpty()) {
+            list.next();
+            list.next();
+            System.out.print(list.remove() + ", ");
+        }
     }
 
     static void testList(List<Integer> list) {
@@ -39,13 +81,13 @@ public class Main {
         list.add(33);
         list.add(44);
 
-        list.add(0, 55);
-        list.add(2, 66);
-        list.add(list.size(), 66);
+        list.add(0, 55); // [55, 11, 22, 33, 44]
+        list.add(2, 66); // [55, 11, 66, 22, 33, 44]
+        list.add(list.size(), 77); // [55, 11, 66, 22, 33, 44, 77]
 
-        list.remove(0);
-        list.remove(2);
-        list.remove(list.size() - 1);
+        list.remove(0); // [11, 66, 22, 33, 44, 77]
+        list.remove(2); // [11, 66, 33, 44, 77]
+        list.remove(list.size() - 1); // [11, 66, 33, 44]
 
         Asserts.test(list.indexOf(44) == 3);
         Asserts.test(list.indexOf(22) ==List.ELEMENT_NOT_FOUND);
