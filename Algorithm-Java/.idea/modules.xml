@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/09-布隆过滤器/09-布隆过滤器.iml" filepath="$PROJECT_DIR$/09-布隆过滤器/09-布隆过滤器.iml" />
       <module fileurl="file://$PROJECT_DIR$/算法第一季02-动态数组/算法第一季02-动态数组.iml" filepath="$PROJECT_DIR$/算法第一季02-动态数组/算法第一季02-动态数组.iml" />
       <module fileurl="file://$PROJECT_DIR$/算法第一季03-链表/算法第一季03-链表.iml" filepath="$PROJECT_DIR$/算法第一季03-链表/算法第一季03-链表.iml" />
+      <module fileurl="file://$PROJECT_DIR$/算法第一季04-栈/算法第一季04-栈.iml" filepath="$PROJECT_DIR$/算法第一季04-栈/算法第一季04-栈.iml" />
+      <module fileurl="file://$PROJECT_DIR$/算法第一季05-队列/算法第一季05-队列.iml" filepath="$PROJECT_DIR$/算法第一季05-队列/算法第一季05-队列.iml" />
     </modules>
   </component>
 </project>
