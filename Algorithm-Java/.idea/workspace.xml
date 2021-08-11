@@ -2,27 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/栈/_20_有效的括号.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/栈/_856_括号的分数.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/队列/_232_用栈实现队列.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/com/rb/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/com/rb/Stack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/com/rb/Stack2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/list/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/list/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/list/LinkList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/src/list/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季04-栈/算法第一季04-栈.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Deque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Queue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/list/AbstractList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/list/ArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/list/LinkList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/list/List.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/算法第一季05-队列.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleDeque.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleQueue.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00-LeetCode/src/栈/_856_括号的分数.java" beforeDir="false" afterPath="$PROJECT_DIR$/00-LeetCode/src/栈/_856_括号的分数.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季05-队列/com/rb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季05-队列/com/rb/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季03-链表/src/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Deque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Queue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +71,7 @@
       <command value="Main" />
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application._225_用队列实现栈">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
       <module name="算法第一季04-栈" />
@@ -122,12 +111,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_160_相交链表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="链表._160_相交链表" />
+    <configuration name="_225_用队列实现栈" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="队列._225_用队列实现栈" />
       <module name="00-LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="链表.*" />
+          <option name="PATTERN" value="队列.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -135,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="_234_回文链表" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="链表._234_回文链表" />
+    <configuration name="_856_括号的分数" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="栈._856_括号的分数" />
       <module name="00-LeetCode" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="链表.*" />
+          <option name="PATTERN" value="栈.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application._225_用队列实现栈" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application._856_括号的分数" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application._234_回文链表" />
-        <item itemvalue="Application._160_相交链表" />
       </list>
     </recent_temporary>
   </component>
@@ -223,6 +212,11 @@
           <url>file://$PROJECT_DIR$/00-LeetCode/src/链表/ListNode.java</url>
           <line>11</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
