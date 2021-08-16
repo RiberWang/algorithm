@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleDeque.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleQueue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Comparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/算法第一季06-二叉搜索树.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00-LeetCode/src/栈/_856_括号的分数.java" beforeDir="false" afterPath="$PROJECT_DIR$/00-LeetCode/src/栈/_856_括号的分数.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/算法第一季05-队列/com/rb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季05-队列/com/rb/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季03-链表/src/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Deque.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Deque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Queue.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/Queue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java" beforeDir="false" afterPath="$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -43,7 +48,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/算法第一季05-队列/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -52,6 +57,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb" />
       <recent name="$PROJECT_DIR$/算法第一季05-队列/src" />
       <recent name="$PROJECT_DIR$/算法第一季04-栈/src/list" />
       <recent name="$PROJECT_DIR$/算法第一季02-动态数组/src" />
@@ -71,7 +77,7 @@
       <command value="Main" />
     </option>
   </component>
-  <component name="RunManager" selected="Application._225_用队列实现栈">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
       <module name="算法第一季04-栈" />
@@ -98,12 +104,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
-      <module name="算法第一季03-链表" />
+      <module name="算法第一季06-二叉搜索树" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="single.*" />
+          <option name="PATTERN" value="com.rb.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
         <item itemvalue="Application._225_用队列实现栈" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application._856_括号的分数" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>

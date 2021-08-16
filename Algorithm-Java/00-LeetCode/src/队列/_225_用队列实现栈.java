@@ -19,7 +19,7 @@ public class _225_用队列实现栈 {
         while (!queue1.isEmpty()) {
             queue2.offer(queue1.poll());
         }
-//        queue1 = queue2;
+
         Queue temp = queue1;
         queue1 = queue2;
         queue2 = temp;
