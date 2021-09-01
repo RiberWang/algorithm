@@ -2,21 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Comparable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Comparator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/BinaryTreeInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/BinaryTrees.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/InorderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/LevelOrderPrinter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/Printer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/printer/Strings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/算法第一季06-二叉搜索树.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/file/Files.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java" beforeDir="false" afterPath="$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleDeque.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleDeque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季05-队列/src/com/rb/circle/CircleQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/BinarySearchTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

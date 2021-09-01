@@ -1,4 +1,6 @@
 package com.rb;
+import com.rb.file.Files;
+import com.rb.printer.BinaryTreeInfo;
 import com.rb.printer.BinaryTrees;
 
 import java.util.Comparator;
@@ -6,7 +8,7 @@ import java.util.Comparator;
 public class Main {
     public static void main(String[] args) {
 //        test1();
-        test2();
+//        test2();
 
         /**
          * Java中的匿名类 类似于iOS的Block JS的闭包（function）
@@ -27,6 +29,60 @@ public class Main {
         BinarySearchTree<Person> bst3 = new BinarySearchTree<>(new PersonComparator2());
         bst3.add(new Person(12));
         bst3.add(new Person(15));
+
+//        test3();
+        test4();
+
+        BinaryTrees.println(new BinaryTreeInfo() {
+            @Override
+            public Object root() {
+                return "A";
+            }
+
+            @Override
+            public Object left(Object node) {
+                if (node.equals("A")) return "B";
+                if (node.equals("B")) return "D";
+                return null;
+            }
+
+            @Override
+            public Object right(Object node) {
+                if (node.equals("A")) return "C";
+                if (node.equals("C")) return "E";
+                return null;
+            }
+
+            @Override
+            public Object string(Object node) {
+                return node.toString() + "_";
+            }
+        });
+
+    }
+
+    static void test4() {
+        BinarySearchTree<Person> bst = new BinarySearchTree<>();
+        bst.add(new Person(10, "Jack"));
+        bst.add(new Person(12, "Rose"));
+        bst.add(new Person(6, "Jim"));
+
+        bst.add(new Person(10, "Michael"));
+
+        BinaryTrees.println(bst);
+    }
+
+    static void test3() {
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        for (int i = 0; i < 40; i++) {
+            bst.add((int)(Math.random() * 100));
+        }
+        BinaryTrees.println(bst);
+
+        // 写入到文件
+        String str = BinaryTrees.printString(bst);
+        str += "\n";
+        Files.writeToFile("/Users/riber/Downloads/1.txt", str);
     }
 
     static void test2() {

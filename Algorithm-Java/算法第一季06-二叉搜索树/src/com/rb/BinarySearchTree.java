@@ -55,6 +55,7 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
                 node = node.left;
             }
             else { // 等于
+                node.element = element; // 覆盖
                 return;
             }
         }
@@ -114,7 +115,17 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
 
     @Override
     public Object string(Object node) {
-        return ((Node<E>)node).element;
+        Node<E> myNode = (Node<E>) node;
+
+        String parentStr = "";
+        if (myNode.parent != null) {
+            parentStr = myNode.parent.element.toString();
+
+            return ((Node<E>)node).element + "_" + "p(" + parentStr + ")";
+        }
+        else  {
+            return ((Node<E>)node).element;
+        }
     }
 
     private static class Node<E> {

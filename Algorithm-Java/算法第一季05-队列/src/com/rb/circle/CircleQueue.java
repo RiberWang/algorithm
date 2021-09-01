@@ -22,10 +22,10 @@ public class CircleQueue<E> {
     }
 
     public void clear() {
-        size = 0;
         for (int i = 0; i < size; i++) {
             elements[index(i)] = null;
         }
+        size = 0;
         front = 0;
     }
 
