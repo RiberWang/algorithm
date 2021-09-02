@@ -3,6 +3,8 @@ import com.rb.printer.BinaryTreeInfo;
 
 import java.util.Comparator;
 import java.lang.Comparable;
+import java.util.LinkedList;
+import java.util.Queue;
 
 // 二叉搜索树
 public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparable
@@ -92,6 +94,119 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
         return false;
     }
 
+    /**
+     * 前序遍历
+     */
+    public void preorderTraversal() {
+        preorderTraversal(root);
+    }
+
+    private void preorderTraversal(Node<E> node) {
+        if (node == null) return;
+        System.out.println(node.element);
+        preorderTraversal(node.left);
+        preorderTraversal(node.right);
+    }
+
+    public void preorderTraversalWithVisitor(Visitor<E> visitor) {
+        if (visitor == null) return;
+        preorderTraversalWithVisitor(root, visitor);
+    }
+
+    private void preorderTraversalWithVisitor(Node<E> node, Visitor<E> visitor) {
+        if (node == null || visitor.stop) return;
+
+        visitor.stop = visitor.visit(node.element);
+        preorderTraversalWithVisitor(node.left, visitor);
+        preorderTraversalWithVisitor(node.right, visitor);
+    }
+
+    /**
+     * 中序遍历
+     */
+    public void inorderTraversal() {
+        inorderTraversal(root);
+    }
+
+    private void inorderTraversal(Node<E> node) {
+        if (node == null) return;
+        inorderTraversal(node.left);
+        System.out.println(node.element);
+        inorderTraversal(node.right);
+    }
+
+    private void inorderTraversal2(Node<E> node) {
+        if (node == null) return;
+        inorderTraversal2(node.right);
+        System.out.println(node.element);
+        inorderTraversal2(node.left);
+    }
+
+    public void inorderTraversalWithVisitor(Visitor<E> visitor) {
+        if (visitor == null) return;
+
+        inorderTraversalWithVisitor(root, visitor);
+    }
+
+    private void inorderTraversalWithVisitor(Node<E> node, Visitor<E> visitor) {
+        if (node == null || visitor.stop) return;
+
+        inorderTraversalWithVisitor(node.left, visitor);
+        if (visitor.stop) return;
+        visitor.stop = visitor.visit(node.element);
+        inorderTraversalWithVisitor(node.right, visitor);
+    }
+
+    /**
+     * 后序遍历
+     */
+    public void postorderTraversal() {
+        postorderTraversal(root);
+    }
+
+    private void postorderTraversal(Node<E> node) {
+        if (node == null) return;
+        postorderTraversal(node.left);
+        postorderTraversal(node.right);
+        System.out.println(node.element);
+    }
+
+    public void postorderTraversalWithVisitor(Visitor<E> visitor) {
+        if (visitor == null) return;
+
+        postorderTraversalWithVisitor(root, visitor);
+    }
+
+    private void postorderTraversalWithVisitor(Node<E> node, Visitor<E> visitor) {
+        if (node == null || visitor.stop) return;
+
+        postorderTraversalWithVisitor(node.left, visitor);
+        postorderTraversalWithVisitor(node.right, visitor); // visitor.stop = true
+        if (visitor.stop) return;
+        visitor.stop = visitor.visit(node.element);
+    }
+
+    /**
+     * 层序遍历
+     */
+    public void levelOrderTraversal() {
+        if (root == null) return;
+
+        Queue<Node<E>> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            Node<E> node = queue.poll();
+            System.out.println(node.element);
+
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+        }
+    }
+
     private void elementNotNullCheck(E element) {
         if (element == null) {
             throw new IllegalArgumentException("element must not null");
@@ -126,6 +241,39 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
         else  {
             return ((Node<E>)node).element;
         }
+    }
+
+    public void levelOrder(Visitor<E> visitor) {
+        if (root == null || visitor == null) return;
+
+        Queue<Node<E>> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            Node<E> node = queue.poll();
+            if (visitor.visit(node.element)) return;
+
+            if (node.left != null) {
+                queue.offer(node.left);
+            }
+            if (node.right != null) {
+                queue.offer(node.right);
+            }
+        }
+    }
+
+    /**
+     * 接口改为抽象类  interface -> abstract
+     * 抽象类可以存储成员变量
+     * @param <E>
+     */
+    public static abstract class Visitor<E> {
+        boolean stop;
+        /**
+         *
+         * @param element
+         * @return 返回true停止遍历
+         */
+        abstract boolean visit(E element);
     }
 
     private static class Node<E> {

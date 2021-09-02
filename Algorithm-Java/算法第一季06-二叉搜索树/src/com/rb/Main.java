@@ -31,8 +31,8 @@ public class Main {
         bst3.add(new Person(15));
 
 //        test3();
-        test4();
-
+//        test4();
+        test5();
         BinaryTrees.println(new BinaryTreeInfo() {
             @Override
             public Object root() {
@@ -58,6 +58,63 @@ public class Main {
                 return node.toString() + "_";
             }
         });
+
+    }
+
+    // 前序、中序、后序、层序遍历
+    static void test5() {
+        Integer data[] = new Integer[]{
+                7, 4, 2, 1, 3, 5, 9, 8, 11, 10, 12
+        };
+        BinarySearchTree<Integer> bst = new BinarySearchTree<>();
+        for (int i = 0; i < data.length; i++) {
+            bst.add(data[i]);
+        }
+
+        BinaryTrees.println(bst);
+//        bst.preorderTraversal();
+//        bst.inorderTraversal();
+//        bst.postorderTraversal();
+//        bst.levelOrderTraversal();
+        bst.preorderTraversalWithVisitor(new BinarySearchTree.Visitor<Integer>() {
+            @Override
+            public boolean visit(Integer element) {
+                System.out.print(element + " ");
+
+                return element == 2 ? true : false;
+            }
+        });
+        System.out.println();
+
+        bst.inorderTraversalWithVisitor(new BinarySearchTree.Visitor<Integer>() {
+            @Override
+            public boolean visit(Integer element) {
+                System.out.print(element + " ");
+
+                return element == 4 ? true : false;
+            }
+        });
+        System.out.println();
+
+        bst.postorderTraversalWithVisitor(new BinarySearchTree.Visitor<Integer>() {
+            @Override
+            public boolean visit(Integer element) {
+                System.out.print(element + " ");
+
+                return element == 4 ? true : false;
+            }
+        });
+        System.out.println();
+
+        bst.levelOrder(new BinarySearchTree.Visitor<Integer>() {
+            @Override
+            public boolean visit(Integer element) {
+                System.out.print(element + " ");
+
+                return element == 9 ? true : false;
+            }
+        });
+        System.out.println();
 
     }
 
