@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/二叉树/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/00-LeetCode/src/二叉树/_226_翻转二叉树.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree$Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree$Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree$Visitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$7.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main$PersonComparator2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/算法第一季06-二叉搜索树/com/rb/Main.class" afterDir="false" />
@@ -20,8 +23,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>

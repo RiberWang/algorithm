@@ -7,7 +7,7 @@ import java.util.Comparator;
 
 public class Main {
     public static void main(String[] args) {
-//        test1();
+        test1();
 //        test2();
 
         /**
@@ -32,7 +32,7 @@ public class Main {
 
 //        test3();
 //        test4();
-        test5();
+//        test5();
         BinaryTrees.println(new BinaryTreeInfo() {
             @Override
             public Object root() {
@@ -115,7 +115,6 @@ public class Main {
             }
         });
         System.out.println();
-
     }
 
     static void test4() {
@@ -166,14 +165,17 @@ public class Main {
 
     static void test1() {
         Integer data[] = new Integer[] {
-                7, 4, 9, 2, 5, 8, 11, 3, 12, 1
+                7, 4, 9, 2, 5, 8, 11, 3, 1
         };
         BinarySearchTree<Integer> bst = new BinarySearchTree<>();
         for (int i = 0; i < data.length; i++) {
             bst.add(data[i]);
         };
+        BinaryTrees.println(bst, BinaryTrees.PrintStyle.LEVEL_ORDER);
 
-        BinaryTrees.print(bst, BinaryTrees.PrintStyle.LEVEL_ORDER);
+        System.out.println(bst.isComplete());
+
+//        System.out.println(bst.height());
     }
 
     private static class PersonComparator implements Comparator<Person> {
