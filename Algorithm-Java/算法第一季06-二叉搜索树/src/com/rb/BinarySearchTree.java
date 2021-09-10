@@ -29,7 +29,12 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
     }
 
     public void clear() {
+        root = null;
+        size = 0;
+    }
 
+    public boolean contains(E element) {
+        return node(element) != null;
     }
 
     public boolean isComplete() {
@@ -185,11 +190,60 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
     }
 
     public void remove(E element) {
-
+        remove(node(element));
     }
 
-    public boolean contains(E element) {
-        return false;
+    private void remove(Node<E> node) {
+        if (node == null) return;
+        size--;
+
+        if (node.hasTwoChildren()) { // 度为2的节点
+            Node<E> s = successor(node); // 找到后己节点
+            // 用后继节点的值覆盖度为2的节点的值
+            node.element = s.element;
+            // 删除后继节点
+            node = s;
+        }
+
+        // 删除node节点（node的度必然为1或0）
+        Node<E> replacementNode = node.left != null ? node.left : node.right;
+        if (replacementNode != null) { // node是度为1的节点
+            // 更改parent
+            replacementNode.parent = node.parent;
+            // 更改parent的left、right的指向
+            if (node.parent == null) { // node是度为1的节点并且是根节点
+                root = replacementNode;
+//                replacementNode.parent = null;
+            }
+            else if (node == node.parent.left) {
+                node.parent.left = replacementNode;
+            } else { // node == node.parent.right
+                node.parent.right = replacementNode;
+            }
+        } else if (node.parent == null) { // node是叶子节点并且是根节点
+            root = null;
+        } else { // node是叶子节点但不是根节点
+            if (node == node.parent.left) {
+                node.parent.left = null;
+            } else {
+                node.parent.right = null;
+            }
+        }
+    }
+
+    private Node<E> node(E element) {
+        Node<E> node = root;
+        while (node != null) {
+            int cmp = compare(element, node.element);
+            if (cmp == 0) return node;
+            if (cmp > 0) {
+                node = node.right;
+            } else { // cmp > 0
+                node = node.left;
+            }
+        }
+
+        return null;
     }
 
     /**
@@ -357,6 +411,46 @@ public class BinarySearchTree<E> implements BinaryTreeInfo { // extends Comparab
                 queue.offer(node.right);
             }
         }
+    }
+
+    private Node<E> predesessor(Node<E> node) {
+        if (node == null) return null;
+
+        // 前去节点在左子树当中(left.right.right.right...)
+        Node<E> tempNode = node.left;
+        if (tempNode != null) {
+            while (tempNode.right != null) {
+                tempNode = tempNode.right;
+            }
+            return tempNode;
+        }
+
+        // 从父节点、祖父节点中寻找前驱节点
+        while (tempNode.parent != null && node == node.parent.left) {
+            tempNode = tempNode.parent;
+        }
+
+        return tempNode.parent;
+    }
+
+    private Node<E> successor(Node<E> node) {
+        if (node == null) return null;
+
+        // 前去节点在左子树当中(right.left.left...)
+        Node<E> tempNode = node.right;
+        if (tempNode != null) {
+            while (tempNode.left != null) {
+                tempNode = tempNode.left;
+            }
+            return tempNode;
+        }
+
+        // 从父节点、祖父节点中寻找前驱节点
+        while (tempNode.parent != null && node == node.parent.right) {
+            tempNode = tempNode.parent;
+        }
+
+        return tempNode.parent;
     }
 
     @Override
