@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d93df6b2-a9ce-4896-b44d-49903c86deee" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/Comparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/Comparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/file/Files.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/printer/BinaryTreeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/printer/BinaryTrees.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/printer/InorderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/printer/LevelOrderPrinter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/printer/Printer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/printer/Strings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/tree/BST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/tree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树2/算法第一季06-二叉搜索树2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -36,7 +50,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -45,11 +59,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/算法第一季06-二叉搜索树2/src" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/算法第一季06-二叉搜索树2" />
       <recent name="$PROJECT_DIR$/算法第一季06-二叉搜索树/src/com/rb" />
       <recent name="$PROJECT_DIR$/算法第一季05-队列/src" />
-      <recent name="$PROJECT_DIR$/算法第一季04-栈/src/list" />
-      <recent name="$PROJECT_DIR$/算法第一季02-动态数组/src" />
-      <recent name="$PROJECT_DIR$/算法第一季/03-链表" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/算法第一季/02-动态数组" />
@@ -92,12 +106,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
+      <module name="算法第一季04-栈" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rb.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
+      <module name="算法第一季05-队列" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.rb.tree.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.rb.Main" />
       <module name="算法第一季06-二叉搜索树" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.rb.*" />
+          <option name="PATTERN" value="com.rb.tree.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -211,6 +251,14 @@
           <url>file://$PROJECT_DIR$/00-LeetCode/src/队列/_225_用队列实现栈.java</url>
           <line>17</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/算法第一季06-二叉搜索树2/src/com/rb/tree/BST.java</url>
+          <line>97</line>
+          <properties class="com.rb.BST">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
